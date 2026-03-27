@@ -46,13 +46,16 @@
                 <span></span><span></span><span></span>
             </button>
             <ul class="nav-links" id="navLinks" role="list">
-                <li><a href="#home"     class="nav-link">Home</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#our-work" class="nav-link">Our Work</a></li>
-                <li><a href="#reviews"  class="nav-link">Reviews</a></li>
-                <li><a href="#why-us"   class="nav-link">Why Us</a></li>
-                <li><a href="#contact"  class="nav-link">Contact</a></li>
+                <li><a href="#home"     class="nav-link" data-i18n="nav_home">Home</a></li>
+                <li><a href="#services" class="nav-link" data-i18n="nav_services">Services</a></li>
+                <li><a href="#our-work" class="nav-link" data-i18n="nav_work">Our Work</a></li>
+                <li><a href="#reviews"  class="nav-link" data-i18n="nav_reviews">Reviews</a></li>
+                <li><a href="#why-us"   class="nav-link" data-i18n="nav_why">Why Us</a></li>
+                <li><a href="#contact"  class="nav-link" data-i18n="nav_contact">Contact</a></li>
             </ul>
+            <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+                <span id="langLabel">Español</span>
+            </button>
             <span class="nav-cta">
                 <i class="fas fa-phone" aria-hidden="true"></i> 703-898-8041
             </span>
@@ -66,18 +69,18 @@
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="hero-container">
             <div class="hero-content fade-up">
-                <p class="hero-eyebrow">Southern Florida's Trusted General Contractor</p>
+                <p class="hero-eyebrow" data-i18n="hero_eyebrow">Southern Florida's Trusted General Contractor</p>
                 <div class="hero-logo-wrap">
                     <img src="assets/images/GHISFL_Logo.jpg" alt="Garcia Home Improvement of Southern Florida" class="hero-logo">
                 </div>
-                <h1 class="hero-headline">Transform Your Home<br>With Expert Craftsmanship</h1>
-                <p class="hero-sub">We bring your vision to life with quality work and honest service.</p>
+                <h1 class="hero-headline" data-i18n-html="hero_headline">Transform Your Home<br>With Expert Craftsmanship</h1>
+                <p class="hero-sub" data-i18n="hero_sub">We bring your vision to life with quality work and honest service.</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-outline-white">
-                        <i class="fas fa-clipboard-list" aria-hidden="true"></i> Get a Free Estimate
+                        <i class="fas fa-clipboard-list" aria-hidden="true"></i> <span data-i18n="btn_estimate">Get a Free Estimate</span>
                     </a>
                     <a href="#services" class="btn btn-outline-white">
-                        <i class="fas fa-hammer" aria-hidden="true"></i> Our Services
+                        <i class="fas fa-hammer" aria-hidden="true"></i> <span data-i18n="btn_services">Our Services</span>
                     </a>
                     <a href="https://www.myfloridalicense.com/LicenseDetail.asp?SID=&id=9AB1AE57A50A6D9D0A965473C99B67BC" target="_blank" rel="noopener noreferrer" class="btn btn-outline-white">
                         <i class="fas fa-certificate" aria-hidden="true"></i> Licensed &amp; Insured CBC1261215
@@ -86,11 +89,11 @@
                 <div class="hero-trust">
                     <div class="trust-item">
                         <i class="fas fa-star" aria-hidden="true"></i>
-                        <span>Quality Guaranteed</span>
+                        <span data-i18n="trust_quality">Quality Guaranteed</span>
                     </div>
                     <div class="trust-item">
                         <i class="fas fa-handshake" aria-hidden="true"></i>
-                        <span>Free Estimates</span>
+                        <span data-i18n="trust_estimates">Free Estimates</span>
                     </div>
                 </div>
             </div>
@@ -106,10 +109,10 @@
     <section id="services" class="section services">
         <div class="container">
             <div class="section-header fade-up">
-                <p class="section-eyebrow">What We Do</p>
-                <h2 class="section-title">Our Services</h2>
+                <p class="section-eyebrow" data-i18n="svc_eyebrow">What We Do</p>
+                <h2 class="section-title" data-i18n="svc_title">Our Services</h2>
                 <div class="section-divider"></div>
-                <p class="section-subtitle">We specialize in high-quality home improvement projects that increase value, beauty, and comfort.</p>
+                <p class="section-subtitle" data-i18n="svc_subtitle">We specialize in high-quality home improvement projects that increase value, beauty, and comfort.</p>
             </div>
 
             <div class="services-grid services-grid--single">
@@ -119,13 +122,13 @@
                     <div class="service-icon-wrap">
                         <i class="fas fa-sink service-icon" aria-hidden="true"></i>
                     </div>
-                    <h3 class="service-title">Kitchen &amp; Bath Remodeling</h3>
-                    <p class="service-desc">Reimagine your kitchen or bathroom with custom cabinetry, countertops, tile work, fixtures, and full layout renovations. We handle every detail from demo to final finish.</p>
+                    <h3 class="service-title" data-i18n="svc_kb_title">Kitchen &amp; Bath Remodeling</h3>
+                    <p class="service-desc" data-i18n="svc_kb_desc">Reimagine your kitchen or bathroom with custom cabinetry, countertops, tile work, fixtures, and full layout renovations. We handle every detail from demo to final finish.</p>
                     <ul class="service-list">
-                        <li><i class="fas fa-check" aria-hidden="true"></i> Custom cabinetry &amp; countertops</li>
-                        <li><i class="fas fa-check" aria-hidden="true"></i> Tile installation &amp; backsplashes</li>
-                        <li><i class="fas fa-check" aria-hidden="true"></i> Fixture &amp; plumbing upgrades</li>
-                        <li><i class="fas fa-check" aria-hidden="true"></i> Full demolition &amp; buildout</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> <span data-i18n="svc_kb_li1">Custom cabinetry &amp; countertops</span></li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> <span data-i18n="svc_kb_li2">Tile installation &amp; backsplashes</span></li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> <span data-i18n="svc_kb_li3">Fixture &amp; plumbing upgrades</span></li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> <span data-i18n="svc_kb_li4">Full demolition &amp; buildout</span></li>
                     </ul>
                 </div>
 
@@ -140,10 +143,10 @@
     <section id="our-work" class="section our-work">
         <div class="container">
             <div class="section-header fade-up">
-                <p class="section-eyebrow">See the Results</p>
-                <h2 class="section-title">Our Work</h2>
+                <p class="section-eyebrow" data-i18n="work_eyebrow">See the Results</p>
+                <h2 class="section-title" data-i18n="work_title">Our Work</h2>
                 <div class="section-divider"></div>
-                <p class="section-subtitle">Real projects, real results. More photos and videos coming soon.</p>
+                <p class="section-subtitle" data-i18n="work_subtitle">Real projects, real results. More photos and videos coming soon.</p>
             </div>
             <div class="gallery-grid">
 
@@ -154,7 +157,7 @@
                             <source src="assets/videos/GHI_Kitchen_2024.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <p class="gallery-caption">Kitchen Remodel — 2024</p>
+                    <p class="gallery-caption" data-i18n="work_vid1">Kitchen Remodel — 2024</p>
                 </div>
 
                 <!-- Home Addition 2006 Video -->
@@ -164,7 +167,7 @@
                             <source src="assets/videos/Home_Addition_2006.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <p class="gallery-caption">Home Addition — 2006</p>
+                    <p class="gallery-caption" data-i18n="work_vid2">Home Addition — 2006</p>
                 </div>
 
                 <!-- Custom Closet 2025 Video -->
@@ -174,7 +177,7 @@
                             <source src="assets/videos/Custom_Closet_2025.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <p class="gallery-caption">Custom Closet — 2025</p>
+                    <p class="gallery-caption" data-i18n="work_vid3">Custom Closet — 2025</p>
                 </div>
 
                 <!-- Playroom 2023 Video -->
@@ -184,10 +187,8 @@
                             <source src="assets/videos/Playroom_2023.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <p class="gallery-caption">Playroom — 2023</p>
+                    <p class="gallery-caption" data-i18n="work_vid4">Playroom — 2023</p>
                 </div>
-
-                <!-- Add more gallery items here -->
 
             </div>
         </div>
@@ -199,8 +200,8 @@
     <section id="reviews" class="section reviews">
         <div class="container">
             <div class="section-header fade-up">
-                <p class="section-eyebrow">What Customers Say</p>
-                <h2 class="section-title">Yelp Reviews</h2>
+                <p class="section-eyebrow" data-i18n="rev_eyebrow">What Customers Say</p>
+                <h2 class="section-title" data-i18n="rev_title">Yelp Reviews</h2>
                 <div class="section-divider"></div>
             </div>
             <div class="reviews-grid">
@@ -228,43 +229,43 @@
     <section id="why-us" class="section why-us">
         <div class="container">
             <div class="section-header section-header-light fade-up">
-                <p class="section-eyebrow eyebrow-light">Why Garcia Home Improvement</p>
-                <h2 class="section-title">Built on Trust &amp; Quality</h2>
+                <p class="section-eyebrow eyebrow-light" data-i18n="why_eyebrow">Why Garcia Home Improvement</p>
+                <h2 class="section-title" data-i18n="why_title">Built on Trust &amp; Quality</h2>
                 <div class="section-divider divider-gold"></div>
             </div>
             <div class="why-grid">
                 <div class="why-card fade-up">
                     <div class="why-icon"><i class="fas fa-award" aria-hidden="true"></i></div>
-                    <h4>Experienced Craftsmen</h4>
-                    <p>Years of hands-on experience delivering high-quality results across Southern Florida homes.</p>
+                    <h4 data-i18n="why1_title">Experienced Craftsmen</h4>
+                    <p data-i18n="why1_desc">Years of hands-on experience delivering high-quality results across Southern Florida homes.</p>
                 </div>
                 <div class="why-card fade-up" style="transition-delay: 0.1s;">
                     <div class="why-icon"><i class="fas fa-comments-dollar" aria-hidden="true"></i></div>
-                    <h4>Transparent Pricing</h4>
-                    <p>No hidden fees. We provide detailed, honest estimates so you always know what you're paying for.</p>
+                    <h4 data-i18n="why2_title">Transparent Pricing</h4>
+                    <p data-i18n="why2_desc">No hidden fees. We provide detailed, honest estimates so you always know what you're paying for.</p>
                 </div>
                 <div class="why-card fade-up" style="transition-delay: 0.2s;">
                     <div class="why-icon"><i class="fas fa-calendar-check" aria-hidden="true"></i></div>
-                    <h4>On Time, Every Time</h4>
-                    <p>We respect your time and property. Projects are completed on schedule and always cleaned up after.</p>
+                    <h4 data-i18n="why3_title">On Time, Every Time</h4>
+                    <p data-i18n="why3_desc">We respect your time and property. Projects are completed on schedule and always cleaned up after.</p>
                 </div>
                 <div class="why-card fade-up" style="transition-delay: 0.3s;">
                     <div class="why-icon"><i class="fas fa-shield-halved" aria-hidden="true"></i></div>
-                    <h4>Licensed &amp; Insured</h4>
-                    <p>Fully licensed and insured for your peace of mind. Your home is in safe, professional hands.</p>
+                    <h4 data-i18n="why4_title">Licensed &amp; Insured</h4>
+                    <p data-i18n="why4_desc">Fully licensed and insured for your peace of mind. Your home is in safe, professional hands.</p>
                     <a href="https://www.myfloridalicense.com/LicenseDetail.asp?SID=&id=9AB1AE57A50A6D9D0A965473C99B67BC" target="_blank" rel="noopener noreferrer" class="license-badge">
                         <i class="fas fa-certificate" aria-hidden="true"></i> CBC1261215
                     </a>
                 </div>
                 <div class="why-card fade-up" style="transition-delay: 0.4s;">
                     <div class="why-icon"><i class="fas fa-person-digging" aria-hidden="true"></i></div>
-                    <h4>Attention to Detail</h4>
-                    <p>From prep work to final touches, we take pride in every detail of every project.</p>
+                    <h4 data-i18n="why5_title">Attention to Detail</h4>
+                    <p data-i18n="why5_desc">From prep work to final touches, we take pride in every detail of every project.</p>
                 </div>
                 <div class="why-card fade-up" style="transition-delay: 0.5s;">
                     <div class="why-icon"><i class="fas fa-map-location-dot" aria-hidden="true"></i></div>
-                    <h4>Locally Owned</h4>
-                    <p>We're your neighbors — a local, family-owned LLC serving the Southern Florida community.</p>
+                    <h4 data-i18n="why6_title">Locally Owned</h4>
+                    <p data-i18n="why6_desc">We're your neighbors — a local, family-owned LLC serving the Southern Florida community.</p>
                 </div>
             </div>
         </div>
@@ -276,39 +277,39 @@
     <section id="contact" class="section contact">
         <div class="container">
             <div class="section-header fade-up">
-                <p class="section-eyebrow">Let's Get Started</p>
-                <h2 class="section-title">Get Your Free Estimate</h2>
+                <p class="section-eyebrow" data-i18n="contact_eyebrow">Let's Get Started</p>
+                <h2 class="section-title" data-i18n="contact_title">Get Your Free Estimate</h2>
                 <div class="section-divider"></div>
-                <p class="section-subtitle">Ready to start your project? Reach out today — we respond quickly and offer free, no-obligation estimates.</p>
+                <p class="section-subtitle" data-i18n="contact_subtitle">Ready to start your project? Reach out today — we respond quickly and offer free, no-obligation estimates.</p>
             </div>
 
             <div class="contact-info-centered fade-up">
                 <div class="contact-photo-wrap">
                     <img src="assets/images/Fernando_Garcia.jpg" alt="Fernando Garcia — Owner, Garcia Home Improvement" class="contact-photo">
                 </div>
-                <h3>Contact Fernando Garcia</h3>
-                <p class="contact-intro">Call, text, or email — we're here to answer your questions and help plan your project from start to finish.</p>
+                <h3 data-i18n="contact_h3">Contact Fernando Garcia</h3>
+                <p class="contact-intro" data-i18n="contact_intro">Call, text, or email — we're here to answer your questions and help plan your project from start to finish.</p>
 
                 <div class="contact-items">
                     <div class="contact-item">
                         <div class="contact-icon-wrap"><i class="fas fa-phone" aria-hidden="true"></i></div>
                         <div class="contact-detail">
-                            <span class="contact-label">Phone / Text</span>
+                            <span class="contact-label" data-i18n="contact_label_phone">Phone / Text</span>
                             703-898-8041
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon-wrap"><i class="fas fa-envelope" aria-hidden="true"></i></div>
                         <div class="contact-detail">
-                            <span class="contact-label">Email</span>
+                            <span class="contact-label" data-i18n="contact_label_email">Email</span>
                             <a href="mailto:fpgarcia01@gmail.com">fpgarcia01@gmail.com</a>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon-wrap"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
                         <div class="contact-detail">
-                            <span class="contact-label">Service Area</span>
-                            <span>Southern Florida</span>
+                            <span class="contact-label" data-i18n="contact_label_area">Service Area</span>
+                            <span data-i18n="contact_area">Southern Florida</span>
                         </div>
                     </div>
                 </div>
@@ -324,29 +325,29 @@
             <div class="footer-top">
                 <div class="footer-brand">
                     <img src="assets/images/GHISFL_Logo.jpg" alt="Garcia Home Improvement" class="footer-logo">
-                    <p class="footer-tagline">Quality home improvement services<br>throughout Southern Florida.</p>
+                    <p class="footer-tagline" data-i18n-html="footer_tagline">Quality home improvement services<br>throughout Southern Florida.</p>
                 </div>
                 <div class="footer-links-col">
-                    <h4>Quick Links</h4>
+                    <h4 data-i18n="footer_links_title">Quick Links</h4>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#our-work">Our Work</a></li>
-                        <li><a href="#reviews">Reviews</a></li>
-                        <li><a href="#why-us">Why Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#home"     data-i18n="nav_home">Home</a></li>
+                        <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                        <li><a href="#our-work" data-i18n="nav_work">Our Work</a></li>
+                        <li><a href="#reviews"  data-i18n="nav_reviews">Reviews</a></li>
+                        <li><a href="#why-us"   data-i18n="nav_why">Why Us</a></li>
+                        <li><a href="#contact"  data-i18n="nav_contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact-col">
-                    <h4>Contact Us</h4>
+                    <h4 data-i18n="footer_contact_title">Contact Us</h4>
                     <p><i class="fas fa-phone" aria-hidden="true"></i> 703-898-8041</p>
                     <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:fpgarcia01@gmail.com">fpgarcia01@gmail.com</a></p>
-                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Southern Florida</p>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <span data-i18n="contact_area">Southern Florida</span></p>
                     <p><i class="fas fa-certificate" aria-hidden="true"></i> <a href="https://www.myfloridalicense.com/LicenseDetail.asp?SID=&id=9AB1AE57A50A6D9D0A965473C99B67BC" target="_blank" rel="noopener noreferrer">Lic. CBC1261215</a></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Garcia Home Improvement of Southern Florida, LLC. All rights reserved.</p>
+                <p data-i18n="footer_copyright">&copy; 2026 Garcia Home Improvement of Southern Florida, LLC. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -354,6 +355,12 @@
     <!-- Toast notification -->
     <div id="toast" class="toast" role="alert" aria-live="polite"></div>
 
+    <!-- Mobile language toggle (floats since navbar is hidden on mobile) -->
+    <button class="lang-toggle-mobile" id="langToggleMobile" aria-label="Toggle language">
+        <span id="langLabelMobile">Español</span>
+    </button>
+
     <script src="js/main.js"></script>
+    <script src="js/i18n.js"></script>
 </body>
 </html>
